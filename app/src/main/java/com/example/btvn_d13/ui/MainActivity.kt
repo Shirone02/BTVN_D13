@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
                 is BaseResponse.Success-> {
                     hideLoading()
                     val weatherForecastResponse = response.data
-                    Log.d("TAG", "BaseResponse.Success: ${weatherForecastResponse?.city}")
+                    Log.d("TAG", "BaseResponse.Success: ${weatherForecastResponse?.name}")
 
                 }
 

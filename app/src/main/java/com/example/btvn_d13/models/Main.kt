@@ -16,8 +16,6 @@ data class Main(
     val seaLevel: Int,
     @SerializedName("temp")
     val temp: Double,
-    @SerializedName("temp_kf")
-    val tempKf: Double,
     @SerializedName("temp_max")
     val tempMax: Double,
     @SerializedName("temp_min")

@@ -20,7 +20,7 @@ class MainViewModel(val forecastRepository: ForecastRepository, application: App
         viewModelScope.launch {
             weatherForecastResult.postValue(BaseResponse.Loading())
             val response = forecastRepository.getWeatherForecastByCityName(cityName)
-            weatherForecastResult.postValue(handleWeatherForecastResponse(response  ))
+            weatherForecastResult.postValue(handleWeatherForecastResponse(response))
         }
     }
 

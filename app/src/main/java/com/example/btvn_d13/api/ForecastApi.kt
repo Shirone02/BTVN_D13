@@ -10,5 +10,8 @@ interface ForecastApi {
     @GET(Constants.FORECAST_URL)
     suspend fun getWeatherForecastByCityName(
         @Query("q") cityName:String,
-        @Query("appid") apiKey: String): Response<WeatherForecastResponse>
+        @Query("appid") apiKey: String,
+        @Query("lang") lang:String? = "en"
+    ): Response<WeatherForecastResponse>
+
 }
